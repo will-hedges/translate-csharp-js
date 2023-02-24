@@ -17,13 +17,12 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(message);
 }
 
-
 // Function to "roll" a die
 //  Generates a random number between 1 and 6
 //  Constructs a new Die object with the random number as it's value
 Die Roll()
 {
-    int dieValue = new Random().Next(1, 6);
+    int dieValue = new Random().Next(1, 7);
     Die die = new Die(dieValue);
     return die;
 }
